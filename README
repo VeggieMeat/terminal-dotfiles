@@ -1,0 +1,7 @@
+These are my current dotfiles. Depending on the box, I'm either running Debian
+Squeeze, Wheezy, or (gasp) Ubuntu, and I typically have no issues with them.
+
+What I do is simply make my dotfile a symlink to the dotfile in the repo, such
+as the following:
+
+  ln -s ~/terminal-dotfiles/.bashrc ~/.bashrc
