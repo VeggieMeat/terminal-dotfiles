@@ -1,0 +1,11 @@
+[alias]
+  # make the log pretty
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=iso --all
+
+  # CHECKPOINT!
+  save = commit -am \"CHECKPOINT!\"
+
+  # quick undo
+  unstage = reset --soft HEAD
+  undo = reset --soft HEAD~1
+  undo-forever = reset --hard HEAD~1
