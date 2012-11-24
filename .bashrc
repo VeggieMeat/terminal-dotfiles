@@ -101,7 +101,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 chkload () {
-  local CURRENTLOAD=`uptime | awk '{print $8}' | cut -d "," -f 1`
+  local CURRENTLOAD=`uptime | awk '{print $10}' | cut -d "," -f 1`
   local CPUCOUNT=`nproc`
   if [ "$CURRENTLOAD" \> "$CPUCOUNT" ]; then
     local LOADLVL="HIGH"
