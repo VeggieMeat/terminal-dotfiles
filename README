@@ -1,7 +1,13 @@
 These are my current dotfiles. Depending on the box, I'm either running Debian
-Squeeze, Wheezy, or (gasp) Ubuntu, and I typically have no issues with them.
+Squeeze, Wheezy, Sid or (gasp) Ubuntu, and I typically have no issues with them.
 
 What I do is simply make my dotfile a symlink to the dotfile in the repo, such
 as the following:
 
   ln -s ~/terminal-dotfiles/.bashrc ~/.bashrc
+
+For the gitaliases, you can either copy and paste them into your ~/.gitconfig,
+or if you have git >= 1.7.10 you can add the following to your .gitconfig file:
+
+  [include]
+    path = terminal-dotfiles/gitaliases
