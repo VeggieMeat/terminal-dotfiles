@@ -129,3 +129,5 @@ chkload () {
 
   echo "$CURRENTLOAD [$LOADLVL]"
 }
+
+export TERM=xterm-256color
